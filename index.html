@@ -1,73 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Resultsheet - Marksheet generator</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="container">
-        <h2 class="main-title">Dynamic Grading</h2>
-        <div class="header-box">
-            <div class="header">
-                <span>Subject</span>
-                <span>Marks</span>
-                <span>Action</span>
-                <span>Grade</span>
-            </div>
-            <div class="body">
-                <div class="row">
-                    <label for="bangla">Bangla</label>
-                    <div class="marks-box">
-                        <input type="text" placeholder="Number you got" />
-                    </div>
-                    <div class="action-box">
-                        <button>Calculate</button>
-                    </div>
-                    <div class="grade-box">
-                        <p>F</p>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <label for="english">English</label>
-                    <div class="marks-box">
-                        <input type="text" placeholder="Number you got" />
-                    </div>
-                    <div class="action-box">
-                        <button>Calculate</button>
-                    </div>
-                    <div class="grade-box">
-                        <p>F</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <label for="ict">ICT</label>
-                    <div class="marks-box">
-                        <input type="text" placeholder="Number you got" />
-                    </div>
-                    <div class="action-box">
-                        <button>Calculate</button>
-                    </div>
-                    <div class="grade-box">
-                        <p>F</p>
-                    </div>
-                </div>
-            </div>
-            <div class="footer">
-                <p>Total Mark: <strong>00</strong></p>
-                <div class="action-box">
-                    <button>Calculate</button>
-                </div>
-
-                <p>Final Grade: <strong>F</strong></p>
-            </div>
+      <h2 class="main-title">Dynamic Grading</h2>
+      <div class="header-box">
+        <div class="header">
+          <span>Subject</span>
+          <span>Marks</span>
+          <span>Action</span>
+          <span>Grade</span>
         </div>
-    </div>
-</body>
+        <div class="body">
+          <div class="row">
+            <label for="bangla">Bangla</label>
+            <div class="marks-box">
+              <input
+                type="number"
+                placeholder="Number you got"
+                id="inputBangla"
+              />
+            </div>
+            <div class="action-box">
+              <button id="cal-btn-bangla">Calculate</button>
+            </div>
+            <div class="grade-box">
+              <p id="resBangla">F</p>
+            </div>
+          </div>
 
+          <div class="row">
+            <label for="english">English</label>
+            <div class="marks-box">
+              <input
+                type="number"
+                placeholder="Number you got"
+                id="inputEnglish"
+              />
+            </div>
+            <div class="action-box">
+              <button id="cal-btn-english">Calculate</button>
+            </div>
+            <div class="grade-box">
+              <p id="resEng">F</p>
+            </div>
+          </div>
+          <div class="row">
+            <label for="ict">ICT</label>
+            <div class="marks-box">
+              <input type="number" placeholder="Number you got" id="inputIct" />
+            </div>
+            <div class="action-box">
+              <button id="cal-btn-ict">Calculate</button>
+            </div>
+            <div class="grade-box">
+              <p id="resIct">F</p>
+            </div>
+          </div>
+        </div>
+        <div class="footer">
+          <p>Total Mark: <strong id="totalMarks">00</strong></p>
+          <div class="action-box">
+            <button id="totalMarksBtn">Calculate</button>
+          </div>
+
+          <p>Final Grade: <strong id="finalGrade">F</strong></p>
+        </div>
+      </div>
+    </div>
+    <!-- <script src="./script.js"></script> -->
+    <script src="./script2.js"></script>
+  </body>
 </html>
